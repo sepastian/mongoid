@@ -5,19 +5,18 @@ $:.unshift lib unless $:.include?(lib)
 require "mongoid/version"
 
 Gem::Specification.new do |s|
-  s.name        = "mongoid"
+  s.name        = "mongoid-rails4"
   s.version     = Mongoid::VERSION
   s.platform    = Gem::Platform::RUBY
-  s.authors     = ["Durran Jordan"]
-  s.email       = ["durran@gmail.com"]
-  s.homepage    = "http://mongoid.org"
-  s.summary     = "Elegant Persistance in Ruby for MongoDB."
-  s.description = "Mongoid is an ODM (Object Document Mapper) Framework for MongoDB, written in Ruby."
+  s.authors     = ["Sebastian Gassner"]
+  s.email       = ["sebastian.gassner@gmail.com"]
+  s.homepage    = "https://github.com/sepastian/mongoid"
+  s.summary     = %q{A versioned release of the mongoid master branch supporting Rails 4.}
   s.license     = "MIT"
 
   s.required_ruby_version     = ">= 1.9"
   s.required_rubygems_version = ">= 1.3.6"
-  s.rubyforge_project         = "mongoid"
+  s.rubyforge_project         = "mongoid-rails4"
 
   s.add_dependency("activemodel", ["~> 4.0.0"])
   s.add_dependency("tzinfo", ["~> 0.3.37"])
