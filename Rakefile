@@ -9,18 +9,18 @@ require "mongoid/version"
 
 task :gem => :build
 task :build do
-  system "gem build mongoid.gemspec"
+  system "gem build mongoid-rails4.gemspec"
 end
 
 task :install => :build do
-  system "sudo gem install mongoid-#{Mongoid::VERSION}.gem"
+  system "sudo gem install mongoid-rails4-#{Mongoid::VERSION}.gem"
 end
 
 task :release => :build do
   system "git tag -a v#{Mongoid::VERSION} -m 'Tagging #{Mongoid::VERSION}'"
   system "git push --tags"
-  system "gem push mongoid-#{Mongoid::VERSION}.gem"
-  system "rm mongoid-#{Mongoid::VERSION}.gem"
+  system "gem push mongoid-rails4-#{Mongoid::VERSION}.gem"
+  system "rm mongoid-rails4-#{Mongoid::VERSION}.gem"
 end
 
 RSpec::Core::RakeTask.new("spec") do |spec|

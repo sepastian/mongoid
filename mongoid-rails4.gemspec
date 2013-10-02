@@ -5,13 +5,13 @@ $:.unshift lib unless $:.include?(lib)
 require "mongoid/version"
 
 Gem::Specification.new do |s|
-  s.name        = "mongoid"
+  s.name        = "mongoid-rails4"
   s.version     = Mongoid::VERSION
   s.platform    = Gem::Platform::RUBY
-  s.authors     = ["Durran Jordan"]
-  s.email       = ["durran@gmail.com"]
+  s.authors     = ["Durran Jordan", "Sebastian Gassner"]
+  s.email       = ["durran@gmail.com", "sebastian.gassner@gmail.com"]
   s.homepage    = "http://mongoid.org"
-  s.summary     = "Elegant Persistance in Ruby for MongoDB."
+  s.summary     = "Elegant Persistance in Ruby (Rails4) for MongoDB."
   s.description = "Mongoid is an ODM (Object Document Mapper) Framework for MongoDB, written in Ruby."
   s.license     = "MIT"
 
